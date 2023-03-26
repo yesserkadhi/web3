@@ -1,0 +1,131 @@
+@charset 'utf-8';
+/*
+ Theme Name:   Alpha Color Child
+ Theme URI:    http://alpha-color.ancorathemes.com/
+ Description:  Alpha Color - Fully Responsive and Mobile Friendly theme
+ Author:       AncoraThemes
+ Author URI:   http://ancorathemes.com/
+ Template:     alpha-color
+ Version:      1.0
+ Tags:         light, inheritable theme-options
+ Text Domain:  alpha-color
+*/
+
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+.scheme_default .sc_layouts_menu_nav>li>a:hover, .scheme_default .sc_layouts_menu_nav>li.sfHover>a, .scheme_default .sc_layouts_menu_nav>li.current-menu-item>a, .scheme_default .sc_layouts_menu_nav>li.current-menu-parent>a, .scheme_default .sc_layouts_menu_nav>li.current-menu-ancestor>a {
+    color: #91c962 !important;
+}
+.scheme_default .sc_layouts_menu_nav>li ul {
+    background-color: #ffffff !important;
+    border-bottom-color: #91c962 !important;
+  
+}
+.scheme_default header .sc_layouts_menu li>ul.sc_layouts_submenu .wpb_wrapper ul li a, .scheme_default .sc_layouts_menu_popup .sc_layouts_menu_nav>li>a, .scheme_default .sc_layouts_menu_nav>li li>a {
+    color: #000000 !important;
+}
+.scheme_default header .sc_layouts_menu li>ul.sc_layouts_submenu .wpb_wrapper ul li a:hover, .scheme_default .sc_layouts_menu_popup .sc_layouts_menu_nav>li>a:hover, .scheme_default .sc_layouts_menu_popup .sc_layouts_menu_nav>li.sfHover>a, .scheme_default .sc_layouts_menu_nav>li li>a:hover, .scheme_default .sc_layouts_menu_nav>li li.sfHover>a, .scheme_default .sc_layouts_menu_nav>li li.current-menu-item>a, .scheme_default .sc_layouts_menu_nav>li li.current-menu-parent>a, .scheme_default .sc_layouts_menu_nav>li li.current-menu-ancestor>a {
+    color: #91c962 !important;
+    background-color: rgba(255,255,255,0);
+}
+.scheme_default .sc_layouts_row_type_compact .sc_layouts_item a:not(.sc_button):not(.button):hover, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item a:not(.sc_button):not(.button):hover, .scheme_default .sc_layouts_menu li>ul.sc_layouts_submenu .post_header a:hover, .scheme_default .woocommerce ul.products li.product .post_header a:hover {
+    color: #91c962;
+}
+.scheme_default .trx_addons_scroll_to_top {
+    color: #ffffff;
+}
+
+
+.scheme_default .trx_addons_scroll_to_top:hover, .scheme_default .trx_addons_cv .trx_addons_scroll_to_top:hover {
+    background: linear-gradient(to right, #575757 50%,#9acd71 50%) no-repeat scroll right bottom / 210% 100% rgba(255,255,255,0) !important;
+}
+
+.scheme_default .trx_addons_scroll_to_top, .scheme_default .trx_addons_cv .trx_addons_scroll_to_top {
+    color: #ffffff;
+    border-color: #525252;
+    background-color: #525252;
+}
+.sc_layouts_menu_nav>li>a, .sc_layouts_menu_nav>li.menu-item-has-children>a {
+    padding: 0px 7px;
+}
+.scheme_default .sc_services_default .sc_services_columns_wrap>div:nth-child(6n+1) .sc_services_item:after {
+    background-color: #91c962;
+}
+.scheme_default .sc_services_default .sc_services_columns_wrap>div:nth-child(6n+3) .sc_services_item:after {
+    background-color: #91c962;
+}
+.scheme_default .sc_services_default .sc_services_columns_wrap>div:nth-child(6n+4) .sc_services_item:after {
+    background-color: #1a181d;
+}
+.scheme_default .sc_button.color_style_default.sc_button_hover_slide_left {
+    background: linear-gradient(to right, #050708 50%,#99cd71 50%) no-repeat scroll right bottom / 210% 100% rgba(255,255,255,0) !important;
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    border-radius: 27px;
+    /* font-size: 16px; */
+    color: white;
+    background-color: #92c963;
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    background-color: #525252;
+}
+.scheme_default input[type="text"], .scheme_default input[type="number"], .scheme_default input[type="email"], .scheme_default input[type="tel"], .scheme_default input[type="search"], .scheme_default input[type="password"], .scheme_default .select_container, .scheme_default .select2-container.select2-container--default span.select2-choice, .scheme_default .select2-container.select2-container--default span.select2-selection, .scheme_default .select2-container.select2-container--default .select2-selection--single .select2-selection__rendered, .scheme_default .select2-container.select2-container--default .select2-selection--multiple, .scheme_default textarea, .scheme_default textarea.wp-editor-area, .scheme_default #buddypress .dir-search input[type="search"], .scheme_default #buddypress .dir-search input[type="text"], .scheme_default #buddypress .groups-members-search input[type="search"], .scheme_default #buddypress .groups-members-search input[type="text"], .scheme_default #buddypress .standard-form input[type="color"], .scheme_default #buddypress .standard-form input[type="date"], .scheme_default #buddypress .standard-form input[type="datetime-local"], .scheme_default #buddypress .standard-form input[type="datetime"], .scheme_default #buddypress .standard-form input[type="email"], .scheme_default #buddypress .standard-form input[type="month"], .scheme_default #buddypress .standard-form input[type="number"], .scheme_default #buddypress .standard-form input[type="password"], .scheme_default #buddypress .standard-form input[type="range"], .scheme_default #buddypress .standard-form input[type="search"], .scheme_default #buddypress .standard-form input[type="tel"], .scheme_default #buddypress .standard-form input[type="text"], .scheme_default #buddypress .standard-form input[type="time"], .scheme_default #buddypress .standard-form input[type="url"], .scheme_default #buddypress .standard-form input[type="week"], .scheme_default #buddypress .standard-form select, .scheme_default #buddypress .standard-form textarea, .scheme_default #buddypress form#whats-new-form textarea, .scheme_default #booked-page-form input[type="email"], .scheme_default #booked-page-form input[type="text"], .scheme_default #booked-page-form input[type="password"], .scheme_default #booked-page-form textarea, .scheme_default .booked-upload-wrap, .scheme_default .booked-upload-wrap input {
+    color: #9a9d9f;
+    border-color: #f3f3f3;
+    border-radius: 16px;
+    background-color: #f4f6fa;
+}
+.scheme_default a:hover {
+    color: #9cce73;
+}
+.scheme_default button, .scheme_default input[type="reset"], .scheme_default input[type="submit"], .scheme_default input[type="button"], .scheme_default .post_item .more-link, .scheme_default .comments_wrap .form-submit input[type="submit"], .scheme_default #buddypress .comment-reply-link, .scheme_default #buddypress .generic-button a, .scheme_default #buddypress a.button, .scheme_default #buddypress button, .scheme_default #buddypress input[type="button"], .scheme_default #buddypress input[type="reset"], .scheme_default #buddypress input[type="submit"], .scheme_default #buddypress ul.button-nav li a, .scheme_default a.bp-title-button, .scheme_default .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button, .scheme_default body #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-buttons .google-cal-button > a, .scheme_default body #booked-profile-page input[type="submit"], .scheme_default body #booked-profile-page button, .scheme_default body .booked-list-view input[type="submit"], .scheme_default body .booked-list-view button, .scheme_default body table.booked-calendar input[type="submit"], .scheme_default body table.booked-calendar button, .scheme_default body .booked-modal input[type="submit"], .scheme_default body .booked-modal button, .scheme_default .sc_button_default, .scheme_default .sc_button:not(.sc_button_simple):not(.sc_button_bordered):not(.sc_button_bg_image), .scheme_default .socials_share:not(.socials_type_drop) .social_icon, .scheme_default .elementor-element.sc_price .elementor-column:nth-child(3n+3) .elementor-element .elementor-button-wrapper .elementor-button, .scheme_default #tribe-bar-form .tribe-bar-submit input[type="submit"], .scheme_default #tribe-bar-form.tribe-bar-mini .tribe-bar-submit input[type="submit"], .scheme_default #tribe-bar-views li.tribe-bar-views-option a, .scheme_default #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-active a, .scheme_default #tribe-events .tribe-events-button, .scheme_default .tribe-events-button, .scheme_default .tribe-events-cal-links a, .scheme_default .tribe-events-sub-nav li a, .scheme_default .edd_download_purchase_form .button, .scheme_default #edd-purchase-button, .scheme_default .edd-submit.button, .scheme_default .widget_edd_cart_widget .edd_checkout a, .scheme_default .sc_edd_details .downloads_page_tags .downloads_page_data > a, .scheme_default .woocommerce #respond input#submit, .scheme_default .woocommerce .button, .scheme_default .woocommerce-page .button, .scheme_default .woocommerce a.button, .scheme_default .woocommerce-page a.button, .scheme_default .woocommerce button.button, .scheme_default .woocommerce-page button.button, .scheme_default .woocommerce input.button, .scheme_default .woocommerce-page input.button, .scheme_default .woocommerce input[type="button"], .scheme_default .woocommerce-page input[type="button"], .scheme_default .woocommerce input[type="submit"], .scheme_default .woocommerce-page input[type="submit"], .scheme_default .woocommerce #respond input#submit.alt, .scheme_default .woocommerce a.button.alt, .scheme_default .woocommerce button.button.alt, .scheme_default .woocommerce input.button.alt, .scheme_default #btn-pay {
+    color: #ffffff;
+    background-color: #525252;
+	border-radius:50px;
+}
+.scheme_default button:hover, .scheme_default button:focus, .scheme_default input[type="submit"]:hover, .scheme_default input[type="submit"]:focus, .scheme_default input[type="reset"]:hover, .scheme_default input[type="reset"]:focus, .scheme_default input[type="button"]:hover, .scheme_default input[type="button"]:focus, .scheme_default .post_item .more-link:hover, .scheme_default .comments_wrap .form-submit input[type="submit"]:hover, .scheme_default .comments_wrap .form-submit input[type="submit"]:focus, .scheme_default #buddypress .comment-reply-link:hover, .scheme_default #buddypress .generic-button a:hover, .scheme_default #buddypress a.button:hover, .scheme_default #buddypress button:hover, .scheme_default #buddypress input[type="button"]:hover, .scheme_default #buddypress input[type="reset"]:hover, .scheme_default #buddypress input[type="submit"]:hover, .scheme_default #buddypress ul.button-nav li a:hover, .scheme_default a.bp-title-button:hover, .scheme_default .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button:hover, .scheme_default body #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-buttons .google-cal-button > a:hover, .scheme_default body #booked-profile-page input[type="submit"]:hover, .scheme_default body #booked-profile-page button:hover, .scheme_default body .booked-list-view input[type="submit"]:hover, .scheme_default body .booked-list-view button:hover, .scheme_default body table.booked-calendar input[type="submit"]:hover, .scheme_default body table.booked-calendar button:hover, .scheme_default body .booked-modal input[type="submit"]:hover, .scheme_default body .booked-modal button:hover, .scheme_default .sc_button_default:hover, .scheme_default .sc_button:not(.sc_button_simple):not(.sc_button_bordered):not(.sc_button_bg_image):hover, .scheme_default .socials_share:not(.socials_type_drop) .social_icon:hover, .scheme_default #tribe-bar-form .tribe-bar-submit input[type="submit"]:hover, .scheme_default #tribe-bar-form .tribe-bar-submit input[type="submit"]:focus, .scheme_default #tribe-bar-form.tribe-bar-mini .tribe-bar-submit input[type="submit"]:hover, .scheme_default #tribe-bar-form.tribe-bar-mini .tribe-bar-submit input[type="submit"]:focus, .scheme_default #tribe-bar-views li.tribe-bar-views-option a:hover, .scheme_default #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-active a:hover, .scheme_default #tribe-events .tribe-events-button:hover, .scheme_default .tribe-events-button:hover, .scheme_default .tribe-events-cal-links a:hover, .scheme_default .tribe-events-sub-nav li a:hover, .scheme_default .edd_download_purchase_form .button:hover, .scheme_default .edd_download_purchase_form .button:active, .scheme_default .edd_download_purchase_form .button:focus, .scheme_default #edd-purchase-button:hover, .scheme_default #edd-purchase-button:active, .scheme_default #edd-purchase-button:focus, .scheme_default .edd-submit.button:hover, .scheme_default .edd-submit.button:active, .scheme_default .edd-submit.button:focus, .scheme_default .widget_edd_cart_widget .edd_checkout a:hover, .scheme_default .sc_edd_details .downloads_page_tags .downloads_page_data > a:hover, .scheme_default .woocommerce #respond input#submit:hover, .scheme_default .woocommerce .button:hover, .scheme_default .woocommerce-page .button:hover, .scheme_default .woocommerce a.button:hover, .scheme_default .woocommerce-page a.button:hover, .scheme_default .woocommerce button.button:hover, .scheme_default .woocommerce-page button.button:hover, .scheme_default .woocommerce input.button:hover, .scheme_default .woocommerce-page input.button:hover, .scheme_default .woocommerce input[type="button"]:hover, .scheme_default .woocommerce-page input[type="button"]:hover, .scheme_default .woocommerce input[type="submit"]:hover, .scheme_default .woocommerce-page input[type="submit"]:hover, .scheme_default #btn-pay:hover {
+    color: #525252;
+    background-color: #9acd71;
+}
+.scheme_default .author_info:after, .scheme_default .sc_content_bordered:after {
+    background: linear-gradient(to bottom, #96ca4e 0%,#96ca4e 33.33%,#1b1b1b 33.33%,#1b1b1b 66.66%,#96ca4e 66.66%, #96ca4e 100%);
+}
+.scheme_default .sc_content_bordered a {
+    color: #226538;
+}
+
+.woocommerce div.product {
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 50px;
+}
+.page_content_wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.scheme_default .woocommerce ul.products li.product .post_data:before {
+    background: transparent;
+}
+.sc_blogger_item_content h2.woocommerce-loop-product__title, .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.87;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.scheme_default .sc_content_tbordered:after{background:#98cd71;}
+
+
+element.style {
+}
+.yesser a {
+    color: white !important;
+}
+
+.yesser a:hover {
+    color: #91c962 !important;
+}

@@ -1,0 +1,123 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+@import "_variables";
+@import "_grid"; 
+@import "_postbox";
+@import "_shortcode_gen";
+@import "__table";
+@import "__field-switch";
+
+
+.lgx_app_meta_header_spacer_light {
+  font-weight: 600 !important;
+  padding: 7px 15px;
+  color: #000;
+
+  h3 {
+    margin: 5px 0 !important;
+    font-size: 16px !important;
+  }
+}
+
+
+.lgx_app_admin_meta_header_title {
+  color: #fff;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  font-family: sans-serif;
+  span {
+    color: #17e70c;
+  }
+}
+
+// Multi field
+
+.lgx_group_field_wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid #f3f0f0;
+  //box-shadow: 0 0.125rem 0.3rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 0.75rem -0.0625rem rgb(0 0 0 / 6%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  
+  .lgx_meta_field_mark {
+    left: -32px;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 1s;
+  }
+  .lgx_group_field_item {
+    float: left;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    &:hover {
+      .lgx_meta_field_mark {
+        opacity: 1;
+      }
+    }
+  }
+
+  .lgx_input_width{
+    width: auto;
+  } 
+  .lgx_group_field_label {
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+}
+
+
+#the-list.ui-sortable tr:hover {
+  cursor: move;
+}
+
+table.wp-list-table {
+  border-collapse: collapse;
+}
+
+tr.placeholder-highlight {
+  /*height: 150px;*/
+  background-color: #f1f1f1 !important;
+  border: 2px dashed #0073aa !important;
+}
+
+.lgx_ls_logo.column-lgx_ls_logo img{
+  max-width: 85px;
+}
+
+.lgx_logo_slider_tab_inner {
+  display: none;
+}
+
+
+.post-type-lgx_lsp_shortcodes {
+  .notice, div.updated {
+    display: none !important;
+  }
+  .gslogo-review-notice, .sp-lcfree-review-notice {
+    display: none !important;
+  }
+  .notice-warning{
+    display: block !important;;
+}
+}
+
+
+.post-type-logosliderwp {
+  .notice, div.updated {
+    display: none !important;
+  }
+  .gslogo-review-notice, .sp-lcfree-review-notice {
+    display: none !important;
+  }
+  .notice-warning{
+    display: block !important;;
+  }
+}
+
+
+

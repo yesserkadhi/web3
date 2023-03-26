@@ -1,0 +1,159 @@
+.lgx_container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lgx-inline {
+  margin-left: -5px;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.lgx_row {
+  position: relative;
+  width: 100%;
+  /*line-height: 0;*/
+
+  & [class^="lgx_col_"] {
+    float: left;
+    /*margin: 0.5rem 1%;*/
+    margin: 0 1%;
+    min-height: 0.125rem;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.lgx_col_1 {
+  width: 6.33333%;
+}
+
+.lgx_col_2 {
+  width: 14.66667%;
+}
+
+.lgx_col_3 {
+  width: 23%;
+}
+
+.lgx_col_4 {
+  width: 31.33333%;
+}
+
+.lgx_col_5 {
+  width: 39.66667%;
+}
+
+.lgx_col_6 {
+  width: 48%;
+}
+
+.lgx_col_7 {
+  width: 56.33333%;
+}
+
+.lgx_col_8 {
+  width: 64.66667%;
+}
+
+.lgx_col_9 {
+  width: 73%;
+}
+
+.lgx_col_10 {
+  width: 81.33333%;
+}
+
+.lgx_col_11 {
+  width: 89.66667%;
+}
+
+.lgx_col_12 {
+  width: 98%;
+}
+
+/** General CSS **/
+
+/** Reset Alertify CSS **/
+
+.alertify-cover {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(40, 45, 40, 0.29);
+  opacity: 1;
+}
+
+.alertify {
+  background: #FFF;
+  border: 3px solid @borderColorDarkLight;
+  border-radius: 0;
+  box-shadow: inset 0 0 20px 5px @boxShadowColor;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+
+  .alertify-dialog {
+    padding: 5px;
+  }
+
+  nav.alertify-buttons {
+    margin-bottom: 10px;
+  }
+
+  .alertify-button-ok {
+    background-color: @backgroundColorWhite;
+    border: 1px solid @borderColorDark;
+    &:hover, &:focus {
+      background-color: @backgroundColorWhite;
+    }
+
+    &:active {
+      color: @textColorWhite;
+      background-color: @backgroundColorLight;
+    }
+  }
+
+  .alertify-button-cancel {
+    background-color: @backgroundColorWhite;
+    border: 1px solid @backgroundColorRed;
+    &:hover, &:focus {
+      background-color: @backgroundColorWhite;
+    }
+
+    &:active {
+      color: @textColorWhite;
+      background-color: @backgroundColorRed;
+    }
+  }
+
+  p.alertify-message {
+    margin: 5px;
+  }
+
+  .alertify-button {
+    border-radius: 0;
+    color: @textColorDark;
+    font-weight: normal;
+    padding: 6px 15px;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    background-image: none;
+  }
+}
+
+/** Reset Alertify CSS **/

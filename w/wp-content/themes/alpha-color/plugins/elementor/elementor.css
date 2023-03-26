@@ -1,0 +1,471 @@
+/* Default Elementor's grid
+----------------------------------------------------------- */
+
+:root {
+    --theme-var-elm_gap_nogap: 0px;
+    --theme-var-elm_gap_narrow: 10px;
+    --theme-var-elm_gap_default: 20px;
+    --theme-var-elm_gap_extended: 30px;
+    --theme-var-elm_gap_wide: 40px;
+    --theme-var-elm_gap_wider: 60px;
+
+    --theme-var-elm_add_page_margins: var( --theme-var-elm_gap_extended );
+}
+
+.elementor-column-gap-narrow > .elementor-row > .elementor-column > .elementor-element-populated, /* Elm 2.9- */
+.elementor-column-gap-narrow > .elementor-column > .elementor-element-populated {                 /* Elm 3.0+ */
+    padding:  calc( var(--theme-var-elm_gap_narrow) / 2 );
+}
+.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated,  /* Elm 2.9- */
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {          /* Elm 3.0+ */
+    padding:  calc( var(--theme-var-elm_gap_default) / 2 );
+}
+.elementor-column-gap-extended > .elementor-row > .elementor-column > .elementor-element-populated, /* Elm 2.9- */
+.elementor-column-gap-extended > .elementor-column > .elementor-element-populated {         /* Elm 3.0+ */
+    padding:  calc( var(--theme-var-elm_gap_extended) / 2 );
+}
+.elementor-column-gap-wide > .elementor-row > .elementor-column > .elementor-element-populated,   /* Elm 2.9- */
+.elementor-column-gap-wide > .elementor-column > .elementor-element-populated {           /* Elm 3.0+ */
+    padding:  calc( var(--theme-var-elm_gap_wide) / 2 );
+}
+.elementor-column-gap-wider > .elementor-row > .elementor-column > .elementor-element-populated,  /* Elm 2.9- */
+.elementor-column-gap-wider > .elementor-column > .elementor-element-populated {          /* Elm 3.0+ */
+    padding:  calc( var(--theme-var-elm_gap_wider) / 2 );
+}
+
+.elementor-container > .elementor-row > .elementor-column > .elementor-element-populated,     /* Elm 2.9- */
+.elementor-container > .elementor-column > .elementor-element-populated {             /* Elm 3.0+ */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+@media (max-width:767px) {
+    /* Elementor */
+    :root {
+        --theme-var-elm_gap_narrow: 8px;
+        --theme-var-elm_gap_default: 10px;
+        --theme-var-elm_gap_extended: 20px;
+        --theme-var-elm_gap_wide: 30px;
+        --theme-var-elm_gap_wider: 40px;
+
+        --theme-var-elm_add_page_margins: var( --theme-var-elm_gap_extended );
+    }
+}
+
+
+/* Elementor Body */
+
+.scheme_dark .elementor-page .page_wrap {
+    background: inherit;
+}
+
+/*Titles Styles*/
+
+.elementor-widget-container h3.elementor-size-large {
+    color: #1a181d;
+    font-size: 2.118em;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-column-gap-wider {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.elementor-widget-container h6.elementor-size-medium {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.059em;
+    text-transform: none;
+    letter-spacing: 2.6px;
+    line-height: 1.5em;
+}
+
+.elementor-widget-container h3.elementor-heading-title {
+    line-height: 1.26em;
+}
+
+.elementor-widget-container h6.elementor-size-medium {
+    font-style: normal;
+    font-size: 1.059em;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 2.6px;
+    line-height: 1.5em;
+}
+
+div.elementor-heading-title {
+    font-weight: 600;
+    font-size: 1.059em;
+}
+
+.sc_price span.elementor-heading-title {
+    font-family: 'Rubik', sans-serif;
+}
+
+.elementor-widget-container h2,
+.elementor-widget-container h3,
+.elementor-widget-container h4,
+.elementor-widget-container h5,
+.elementor-widget-container h6 {
+    margin-top: 0;
+}
+
+.elementor-widget-container h3.elementor-size-small {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1.765em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (max-width: 1262px) {
+    .elementor-widget-container h3.elementor-size-large {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 959px) {
+    .elementor-widget-container h3.elementor-size-large {
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-widget-container h3.elementor-size-large {
+        letter-spacing: 0;
+    }
+}
+
+
+/*Buttons*/
+
+.elementor-element .elementor-button-wrapper .elementor-button {
+    line-height: 1.5em;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    font-size: 0.941em;
+}
+
+.elementor-widget-container .slider_container.slider_controls_side .slider_controls_wrap > a:hover,
+.elementor-element .elementor-widget-container .elementor-button-wrapper .elementor-button:hover {
+    background-position: left bottom !important;
+}
+
+.elementor-widget-container .sc_testimonials .slider_container.slider_controls_side .slider_controls_wrap > a {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+}
+
+
+/*Icon list*/
+
+.elementor-icon-list-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/*Prices Columns*/
+
+.sc_price > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap {
+    border: 1px solid;
+    border-right: 0;
+    overflow: inherit;
+}
+
+@media (max-width: 767px) {
+    .sc_price > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap {
+        border-right: 1px solid;
+    }
+}
+
+.woocommerce ul.products li.product .true-price.price, .woocommerce-page ul.products li.product .true-price.price {
+    display: block !important;
+}
+
+.gyges .tp-tab-content {
+    margin-top: -10px !important;
+}
+
+.sc_services_item .sc_button_simple {
+    border-radius: 0;
+}
+
+/* TRX Services */
+
+.elementor-widget-wrap .sc_services.sc_services_default .sc_services_item.with_image {
+    padding-top: 0;
+}
+
+.elementor-widget-wrap .sc_item_columns_1 .sc_services_item {
+    padding: 0;
+}
+
+.elementor-widget-wrap .sc_item_columns_1 .sc_services_item.with_image,
+.elementor-widget-wrap .sc_item_columns_3 .sc_services_item.with_image,
+.elementor-widget-wrap .sc_item_columns_2 .sc_services_item.with_image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elementor-widget-wrap .sc_services_item_featured_right.with_image {
+    flex-direction: row-reverse;
+}
+
+.elementor-widget-wrap .sc_services_item_featured_right.with_image .sc_services_item_info {
+    margin-right: 0;
+}
+
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_3 .sc_services_item_info,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_3 .post_featured.sc_services_item_thumb,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_1 .sc_services_item_info,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_1 .post_featured.sc_services_item_thumb,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .sc_services_item_info,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .post_featured.sc_services_item_thumb {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_1 .post_featured.sc_services_item_thumb,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_3 .post_featured.sc_services_item_thumb,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .post_featured.sc_services_item_thumb {
+    flex: 0 1 20%;
+}
+
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .sc_services_item_info,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_3 .sc_services_item_info,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_1 .sc_services_item_info {
+    flex: 0 1 80%;
+}
+
+.elementor-widget-wrap .sc_services.sc_services_default .sc_services_item_featured_top .post_featured.sc_services_item_thumb,
+.elementor-widget-wrap .sc_services.sc_services_default .sc_services_item_featured_top .sc_services_item_info {
+    flex: 0 1 100%;
+    position: relative;
+}
+
+.elementor-widget-wrap .sc_services_light .with_icon.sc_services_item_featured_top .sc_services_item_info {
+    padding-right: 0;
+}
+
+.elementor-widget-wrap .sc_services_light .with_number.sc_services_item_featured_top {
+    position: relative;
+}
+
+@media (max-width: 1023px) {
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .post_featured.sc_services_item_thumb {
+        flex: 0 1 30%;
+    }
+
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .sc_services_item_info {
+        flex: 0 1 70%;
+    }
+
+    .elementor-widget-wrap .sc_services_default .trx_addons_column-1_3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-widget-wrap .sc_services_default .sc_services_item_featured_left .sc_services_item_info {
+        text-align: left;
+    }
+
+    .elementor-widget-wrap .sc_services_default .sc_services_item_content {
+        display: block;
+        margin-top: 1em;
+    }
+
+    .elementor-widget-wrap .sc_services_default .sc_services_item_button {
+        display: block;
+        margin-top: 1.2em;
+    }
+
+    .elementor-widget-wrap .sc_services.sc_services_default.sc_services_featured_left .sc_item_columns_3 .post_featured.sc_services_item_thumb,
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .post_featured.sc_services_item_thumb,
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_1 .post_featured.sc_services_item_thumb {
+        flex: 0 1 100%;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    .elementor-widget-wrap .sc_services.sc_services_default.sc_services_featured_right .post_featured.sc_services_item_thumb,
+    .elementor-widget-wrap .sc_services.sc_services_default.sc_services_featured_top .post_featured.sc_services_item_thumb {
+        margin-bottom: 1em;
+    }
+
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_services_item_featured_right .post_featured.sc_services_item_thumb,
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_3 .sc_services_item_info,
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_2 .sc_services_item_info,
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_item_columns_1 .sc_services_item_info {
+        flex: 0 1 100%;
+        padding: 0;
+    }
+
+    .elementor-widget-wrap .sc_services.sc_services_default .sc_services_item_featured_right * {
+        text-align: right;
+    }
+}
+
+/* Slider Pagination */
+
+.elementor-widget-wrap .sc_team_slider .slider_controls_side,
+.elementor-widget-wrap .sc_testimonials_slider .slider_controls_side {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 959px) {
+    .elementor-widget-wrap .sc_team_slider .slider_controls_side,
+    .elementor-widget-wrap .sc_testimonials_slider .slider_controls_side {
+        padding-bottom: 0px;
+    }
+}
+
+.elementor-widget-wrap .sc_team_slider .slider_container.slider_controls_side .slider_controls_wrap > a {
+    margin-left: 0;
+    margin-right: 0;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+/* SC Contacts */
+
+.elementor-widget-wrap .contacts_map_left .contacts_map {
+    width: 47%;
+    float: left;
+}
+
+.elementor-widget-wrap .contacts_map_right .contacts_map {
+    width: 47%;
+    float: right;
+}
+
+.elementor-widget-wrap .contacts_map_left .contacts_info {
+    margin-left: 6%;
+    float: left;
+    width: 47%;
+}
+
+.elementor-widget-wrap .contacts_map_right .contacts_info {
+    margin-right: 6%;
+    float: right;
+    width: 47%;
+}
+
+.elementor-widget-wrap .contacts_socials.socials_wrap {
+    display: flex;
+    width: 100%;
+}
+
+.elementor-widget-wrap .contacts_info {
+    line-height: 2.2em;
+}
+
+.elementor-widget-wrap .contacts_info > div > a,
+.elementor-widget-wrap .contacts_info > a,
+.elementor-widget-wrap .contacts_info span {
+    position: relative;
+    display: block;
+    padding-left: 2em;
+}
+
+.elementor-widget-wrap .contacts_info .contacts_left,
+.elementor-widget-wrap .contacts_info .contacts_right {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 767px) {
+    .elementor-widget-wrap .contacts_info .contacts_left,
+    .elementor-widget-wrap .contacts_info .contacts_right {
+        width: 100%;
+    }
+}
+
+.elementor-widget-wrap .contacts_info span:before,
+.elementor-widget-wrap .contacts_info a:before {
+    font-family: 'trx_addons_icons';
+    font-size: 1.2em;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2em;
+    line-height: inherit;
+    text-align: left;
+}
+
+.elementor-widget-wrap .contacts_info .contacts_address:before {
+    content: '\e8c3';
+}
+
+.elementor-widget-wrap .contacts_info .contacts_email:before {
+    content: '\e86d';
+}
+
+.elementor-widget-wrap .contacts_info .contacts_phone:before {
+    content: '\e8c2';
+}
+
+/*Popular Posts Widget*/
+
+.elementor-widget-wrap .trx_addons_tabs .trx_addons_tabs_titles li.ui-tabs-active:after {
+    display: none;
+}
+
+.elementor-element .elementor-widget-container .post_item .post_categories {
+    line-height: 20px;
+}
+
+/*Elementor Header*/
+
+.elementor-element .sc_layouts_menu.inited {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .elementor-page header .elementor-widget-trx_sc_layouts_menu {
+        text-align: right !important;
+    }
+}
+
+footer .elementor-element .sc_layouts_menu.inited {
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    footer .elementor-element .sc_layouts_menu.inited {
+        text-align: center;
+    }
+}
+.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated{
+    padding-top:0!important;
+    padding-bottom:0!important;
+}
+.sc_layouts_column_align_right .elementor-element .sc_layouts_menu.inited{
+    text-align: right;
+}
+.sc_button_simple.sc_button_with_icon{
+    padding:0;
+}
+.sc_button_simple.sc_button_with_icon:after,
+.sc_button_simple.sc_button_with_icon:before{
+    display: none;
+}
+
+/* Fix for Elementor 3.5.0+: paddings are moved from .elementor-column-wrap to the .elementor-widget-wrap
+----------------------------------------------------------- */
+.elementor-container[class*="elementor-column-gap-"] > .elementor-row > .elementor-column > .elementor-element-populated > .elementor-widget-wrap {
+    padding: 0;
+}
+.elementor-section-content-bottom .elementor-column{
+    align-items: flex-end;
+}

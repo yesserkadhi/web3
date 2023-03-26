@@ -1,0 +1,401 @@
+/** Reset Panel Dropdown Toggle Button For Meta Box **/
+
+//#lgx_parallax_generator_meta_box_panel.postbox {
+.lgx_app_admin_meta_box_postbox{
+  .hndle,
+  .handlediv {
+    display: none !important;
+  }
+
+  .inside {
+    margin: 0 !important;;
+    padding: 0 !important;;
+  }
+}
+
+/** Reset Panel Dropdown Toggle Button For Meta Box **/
+
+/** Floating Button **/
+
+.lgx_floating_button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 40px;
+  background-color: @backgroundColorLight;
+  color: @textColorWhite;
+  font-size: 20px;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px @boxShadowColor;*/
+  box-shadow: 0 0 15px 2px @boxShadowColor;
+  text-decoration: none;
+  z-index: 100000;
+
+  &:hover, &:active, &:focus {
+    color: @textColorWhite;
+    box-shadow: 0 0 15px 2px @boxShadowColor;
+  }
+
+  i.lgxicon {
+    display: block;
+    position: relative;
+    top: 20px;
+  }
+}
+
+/** Floating Button **/
+
+/* Meta Box CSS */
+
+
+.lgx_logo_slider_card_header {
+  background-color: @backgroundColorFallBack;
+  background: linear-gradient(-45deg,@backgroundColorTo,@backgroundColorFrom);
+  /*padding: 15px 25px;*/
+  padding: 15px;
+  overflow: hidden;
+
+  .lgx_logo_slider_logo_container {
+    float: left;
+    line-height: 1px;
+    img {
+      position: relative;
+      top:2px;
+    }
+  }
+
+  .lgx_logo_slider_support_container {
+    float: right;
+    line-height: 45px;
+
+    a {
+      color: @textColorWhite;
+      font-size: 18px;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+  }
+}
+
+
+.lgx_logo_slider_meta_box_postbox {
+  // border: 1px solid @borderColorDark;
+
+  .lgx_logo_slider_card_body {
+    background: @backgroundColorWhiteAsh;
+
+    .lgx_logo_slider_info_box {
+      /*width: 100%;*/
+      // border: 1px solid @borderColorDark;
+      // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+      box-shadow: 1px 1.73px 5px 0 rgba(4,5,6,0.5);
+      // border:1px solid #ccd0d4;
+      background: @backgroundColorWhite;
+      //  min-height: 180px;
+      //min-height: 180px;
+      min-height: auto;
+      padding:25px 15px;
+      text-align: center;
+      margin: 10px 0;
+
+
+      p,
+      h1.lgx_logo_slider_header,
+      h2.lgx_logo_slider_header,
+      h3.lgx_logo_slider_header,
+      h4.lgx_logo_slider_header,
+      h5.lgx_logo_slider_header,
+      h6.lgx_logo_slider_header {
+        margin: .40em 0;
+      }
+      .lgx_logo_slider_header {
+        margin-top: 0 !important;
+      }
+
+      .lgx_logo_slider_short_code {
+        background-color: @backgroundColorLightTransparent;
+        padding: 5px 10px;
+      }
+
+      .lgx_logo_slider_copy_button {
+        padding: 3px 15px;
+        display: inline-block;
+        border: 1px solid @borderColorDark;
+        margin-top: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: @backgroundColorLight;
+          color: @textColorWhite;
+        }
+
+      }
+
+      .lgx_logo_slider_settings_box,
+      .lgx_logo_slider_image_box {
+        text-align: left;
+        padding: 5px 15px;
+      }
+
+      .lgx_logo_slider_settings_box,
+      .lgx_logo_slider_image_box {
+        table.form-table {
+          margin-top: 0;
+        }
+      }
+
+      .lgx_logo_slider_image_box {
+        .lgx_logo_slider_image_box_header {
+          text-align: right;
+          margin: 5px 0;
+
+          label {
+            font-weight: 700;
+            margin-right: 10px;
+          }
+
+          .lgx_logo_slider_insert_button {
+            margin-left: 20px;
+          }
+        }
+
+        .lgx_logo_slider_image_box_body {
+          .lgx_logo_slider_image_box_container {
+            min-height: 150px;
+
+            li.lgx_logo_slider_image_box_container_single {
+              border: 1px solid @borderColorDark;
+              margin-bottom: 15px;
+              clear: both;
+
+              .lgx_logo_slider_image_box_container_title_bar {
+                background: @backgroundColorTitleBar;
+                text-align: right;
+                line-height: 1;
+
+                img {
+                  height: 30px;
+                  float: left;
+                  /*visibility: hidden;
+                  opacity: 0;
+                  transition: visibility 0s linear .80s, opacity .80s linear;*/
+                }
+
+                .lgx_logo_slider_image_box_container_title_bar_text {
+                  float: left;
+                  color: @textColorWhite;
+                  font-size: 20px;
+                  font-weight: 500;
+                  margin-left: 15px;
+                  line-height: 30px;
+                }
+
+                a {
+                  text-decoration: none;
+                  display: inline-block;
+                  /*color: #616161;*/
+                  color: @textColorWhite;
+                  transition: 0.4s;
+                  padding: 0 10px;
+                  margin-left: -4px;
+
+                  &.lgx_logo_slider_image_box_container_single_close_button {
+                    &:hover {
+                      background: @backgroundColorRed;
+                    }
+                  }
+
+                  &.lgx_logo_slider_image_box_container_single_expand_collapse_button {
+                    transform: rotate(0deg);
+                    transition: transform 0.5s linear;
+                    &.collapse {
+                      transform: rotate(-180deg);
+                      transition: transform 0.5s linear;
+                    }
+                  }
+
+                  &:focus {
+                    box-shadow: none;
+                    outline: none;
+                  }
+
+                  span {
+                    font-size: 30px;
+                  }
+                }
+              }
+
+              &.lgx_enable_sorting {
+                .lgx_logo_slider_image_box_container_title_bar {
+                  &:hover {
+                    cursor: move;
+                  }
+
+                  img {
+                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+                    -webkit-transition-delay: 0s;
+                    transition-delay: 0s;
+                  }
+                }
+              }
+
+              .lgx_logo_slider_image_box_container_body {
+                margin: 10px 0;
+                clear: both;
+                /*display: none;*/
+
+                .lgx_content_container_box {
+                  .lgx_logo_slider_image_box_container_render_area {
+                    position: relative;
+                    text-align: center;
+                    line-height: 0;
+                    /*padding: 5px;*/
+                    border: 1px solid @borderColorDark;
+
+                    img {
+                      width: 90%;
+                      /*max-width: 90%;*/
+                      position: relative;
+                      z-index: 1;
+                      padding: 5%;
+                      box-shadow: inset 0 0 15px 2px @boxShadowColor;
+                    }
+
+                    a.lgx_change_showcase_item {
+                      max-width: 100%;
+                      display: block;
+                      padding: 10px 15px;
+                      background-color: @backgroundColorDarkTransparent;
+                      position: relative;
+                      margin-left: 0;
+                      margin-right: 0;
+                      margin-bottom: 0;
+                      margin-top: -35px;
+                      z-index: 2;
+                      text-decoration: none;
+                      color: #ffffff;
+                      transition: 0.4s;
+                      font-size: 15px;
+                      line-height: 15px;
+
+                      &:hover {
+                        background-color: @backgroundColorExtraLightTransparent;
+                        color: @textColorDark;
+                      }
+
+                      i {
+                        margin-right: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            li.ui-state-highlight {
+              min-height: 30px;
+              background-color: @boxShadowColor;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      .lgx_logo_slider_tab_box_container {
+        .lgx_logo_slider_nav_tab_wrapper {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          //border-bottom: 1px solid @borderColorDark;
+          margin-bottom: 5px;
+
+          .lgx_logo_slider_nav_tab {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: all 100ms ease-out;
+            background-color: @NavbackgroundColor;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            //border-right: 1px solid @borderColorDark;
+            border-right: 1px solid @backgroundColorWhite;
+            // border-top: 4px solid @borderColorDarkLight;
+            //border-top: 4px solid @NavbackgroundColor;
+            border-top: 4px solid @NavbackgroundColor;
+            margin-bottom: -1px;
+
+            &.lgx_active {
+              background-color: @backgroundColorWhite;
+              color: #535353;
+              border-color:#191e23;
+
+              &:hover {
+                background-color: @backgroundColorWhite;
+                // border-top: 4px solid @borderColorDark;
+                color: @textColorDark;
+              }
+            }
+
+            &:hover {
+              // background-color: @backgroundColorDark;
+              background-color: #191e23;
+              color: #00b9eb;
+              border-color:#191e23;
+              //border-top: 4px solid @borderColorDarkLight;
+            }
+
+            i {
+              margin-right: 5px;
+            }
+
+          }
+        }
+
+        .lgx_logo_slider_tab_content_wrapper {
+          clear: both;
+          margin-top: 15px;
+
+          .lgx_logo_slider_tab_content {
+            transition: opacity 1s linear;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            padding-left: 15px;
+
+            .form-table th {
+              //width: 120px;
+              width: 25%;
+              padding: 10px 10px 15px 0;//  padding: 10px 10px 5px 0;
+            }
+
+            .form-table td {
+              padding: 5px 10px;
+            }
+
+            &.lgx_active {
+              opacity: 1;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
