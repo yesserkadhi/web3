@@ -1,0 +1,125 @@
+/*----------------------------------------------------------------------
+
+ [Master Stylesheet : LogicHunt Parallax Scroll]
+------------------------------------------------------------------------
+ Project:           Parallax Scroll WP
+------------------------------------------------------------------------
+ Version:           1.x.x
+ Author:            LogicHunt
+ Copyright:         Copyright (C) 2022 logichunt.com. All Rights Reserved By LogicHunt(http://logichunt.com/).
+ Websites:          http://logichunt.com
+ Contact/Support:   info@logichunt.com
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+@import "_variables.less";
+
+
+@import "_section.less";
+
+//responsive
+@import "_responsive.less";
+
+.lgx_parallax_app_content_wrapper{
+
+  .lgx_parallax_template {
+    line-height: 1.6;  
+  }
+
+  .lgx_temp_inner {
+     width: 80%;
+    margin: 0 auto;  
+    .lgx_temp_desc{ 
+ 
+      font-size: 3rem;
+      font-weight: 400;
+
+    }
+   
+  }
+
+  .lgx_temp_color_dark {
+    color: #111;
+    .lgx_temp_btn {
+      text-decoration: none;
+        &:hover {
+          background-color: #111;
+          color: #fff;
+        }
+      }
+  }
+
+  .lgx_temp_color_white {
+    color: #fff;
+    .lgx_temp_btn {
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+  }
+
+  .lgx_temp_border_image {
+   -o-border-image: linear-gradient(160deg, rgba(0, 0, 153, 0.55) 0%, rgba(0, 190, 214, 0.6) 100%);
+   border-image: linear-gradient(160deg, rgba(0, 0, 153, 0.55) 0%, rgba(0, 190, 214, 0.6) 100%);
+   border-image-slice: 1;
+   border-top: solid 1px transparent;
+   border-bottom: solid 1px transparent;
+   border-left: solid 1px transparent;
+   border-right: solid 1px transparent;
+   border-width: 3px;
+   padding: 2.5rem;
+  
+ }
+
+ 
+  .lgx_temp_action{    
+   margin: 30px 0 15px;
+   display: inline-flex;
+  }
+
+  .lgx_temp_btn {
+    border-radius: 4px;
+     font-weight: 400;
+    border-width: 2px;
+    padding: 13px 35px;
+    border-style: solid;
+    transition: 0.2s;
+    color: #fff;
+    text-decoration: none;
+    }
+
+  .text_center {
+    text-align: center;
+  }
+  .text_left {
+    text-align: left;
+  }
+  .text_right {
+    text-align: right;
+  }
+}
+
+.lgx_parallax_app {
+  .jarallax {
+    position: relative;
+    z-index: 0;
+  }
+  .jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+}
+.lgx_parallax  {
+    .lgx_parallax_app_content_wrapper {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;   
+    }
+  }
